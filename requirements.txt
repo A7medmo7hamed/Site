@@ -1,0 +1,5 @@
+Flask
+requests
+hashlib
+uuid
+base64
