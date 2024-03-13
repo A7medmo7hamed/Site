@@ -1,0 +1,43 @@
+        body{
+            text-align:center;
+            font-family:Arial;
+            background-size:100%;
+            background-image:url(http://telegra.ph/file/1509e95b3a34c095df045.jpg);
+        }
+        
+        #form{
+            max-width: 250px;
+            background-color: #fff;
+            margin: 25px auto;
+            padding: 15px;
+            <!--box-shadow: 0px 0px 15px rgba(0,0,0,0.2);-->
+        }
+        input[type=number],input[type=password],input[type=email]{
+            font-size:20px;
+            border-radius: 20px;
+            padding: 10px 8px;
+            width: 70%;
+            padding: 10px 8px;
+
+        }
+        input[type=submit]{
+            color: whitesmoke;
+            font-size:20px;
+            
+            border-radius: 20px;
+            padding: 10px 8px;
+            width: 30%
+        }
+        input[type=submit]:hover{
+            background-color: #003C79;
+        }
+        .flashes{
+            list-style: none;
+        }
+        .flashes li{
+            color: white;
+            padding: 10px 8px;
+            margin-bottom: 25px;
+            border-radius: 20px;
+            font-size:20px;
+        }

